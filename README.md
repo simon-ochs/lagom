@@ -6,12 +6,31 @@ An Omnipod 5 companion for bolus ratio analysis.
 
 Omnipod's SmartAdjust algorithm adapts basal rates automatically, but meal and correction boluses are only as good as your configured ICR and ISF - and those don't self-correct. Lagom analyzes your Glooko data and delivers actionable adjustments.
 
-Currently in the algorithm-proving stage - a Jupyter notebook validates the core logic against real export data prior to a full build-out.
+The core logic was proven out in a Jupyter notebook (`validation.ipynb`) and was implemented with FastAPI under `app/`. This will be eventually be deployed in some form to AWS (S3, Lambda, etc.).
 
-## Run
+## Run API
 
 ```bash
 python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+`POST /analyze` takes a `multipart/form-data` request with the Glooko export zip and your pump config:
+
+```bash
+curl -F file=@data/export.zip -F config='{"icr":10,"isf":30,"target_glucose":110}' \
+  http://127.0.0.1:8000/analyze
+```
+
+You can also use the Swagger UI at `http://127.0.0.1:8000/docs`.
+
+## Run Notebook
+
+The original proving ground for the algorithm.
+
+```bash
 source .venv/bin/activate
 jupyter lab
 ```
@@ -30,6 +49,6 @@ Expects a Glooko export zip in the `data/` directory.
 | **Back-calculation** | Deriving the ICR or ISF that *would have* produced an on-target outcome, given actual carbs, insulin, and glucose change. |
 | **Glooko** | Diabetes data aggregation platform; exports CGM, bolus, and pump event data used as input here. |
 
-## TODO
+## To-Do
 
 - [ ] Hypo windows are rejected rather than graded "too strong" because rescue carbs confound end glucose the same way a new meal does. Consider capturing them as directionally-too-strong and excluding only from the back-calculation.
