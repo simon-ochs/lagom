@@ -3,5 +3,6 @@ data/
 *.db
 .DS_Store
 .idea/
-.venv/
 .ipynb_checkpoints/
+openapi.json
+.venv/
