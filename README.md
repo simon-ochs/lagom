@@ -8,6 +8,15 @@ Omnipod's SmartAdjust algorithm adapts basal rates automatically, but meal and c
 
 Currently in the algorithm-proving stage - a Jupyter notebook validates the core logic against real export data prior to a full build-out.
 
+## Run
+
+```bash
+source .venv/bin/activate
+jupyter lab
+```
+
+Expects a Glooko export zip in the `data/` directory.
+
 ## Glossary
 
 | Term | Definition |
@@ -19,15 +28,6 @@ Currently in the algorithm-proving stage - a Jupyter notebook validates the core
 | **Clean window** | A post-bolus CGM window free of confounding events — used for ratio back-calculation. |
 | **Back-calculation** | Deriving the ICR or ISF that *would have* produced an on-target outcome, given actual carbs, insulin, and glucose change. |
 | **Glooko** | Diabetes data aggregation platform; exports CGM, bolus, and pump event data used as input here. |
-
-## Run
-
-```bash
-source .venv/bin/activate
-jupyter lab
-```
-
-Expects a Glooko export zip in the `data/` directory.
 
 ## TODO
 
