@@ -1,12 +1,13 @@
 # Lagom
 
-An Omnipod 5 companion for bolus ratio analysis.
+> *Lagom* (Swedish) — not too much, not too little; just the right amount.
 
-*Lagom* (Swedish) — not too much, not too little; just the right amount.
+An Omnipod 5 companion for bolus ratio analysis.
 
 Omnipod's SmartAdjust algorithm adapts basal rates automatically, but meal and correction boluses are only as good as your configured ICR and ISF - and those don't self-correct. Lagom analyzes your Glooko data and delivers actionable adjustments.
 
-Currently in the algorithm-proving stage - a Jupyter notebook validates the core logic against real export data prior to a full build-out.
+> [!NOTE]
+> Currently in the algorithm-proving stage - a Jupyter notebook validates the core logic against real export data prior to a full build-out.
 
 ## Run
 
