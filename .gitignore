@@ -2,5 +2,6 @@ CLAUDE.md
 *.db
 .DS_Store
 .idea/
+.ipynb_checkpoints/
 openapi.json
 .venv/
