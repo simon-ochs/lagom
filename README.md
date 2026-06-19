@@ -8,21 +8,23 @@ Omnipod's [SmartAdjust](#glossary) algorithm adapts basal rates automatically, b
 
 ## Run
 
+To run the full app locally, do:
+
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+make install     # backend (.venv) + frontend dependencies
+make run         # API on :8000 and UI on :5173 together
 ```
 
-`POST /analyze` takes a `multipart/form-data` request with the Glooko export zip and your pump config:
+Then navigate to the web UI at `http://localhost:5173/`
+
+Alternatively, you can call the API directly with a `POST: multipart/form-data` request:
 
 ```bash
 curl -F file=@tests/data/sample_export.zip -F config='{"icr":10,"isf":30,"target_glucose":110}' \
   http://127.0.0.1:8000/analyze
 ```
 
-You can also use the Swagger UI at `http://127.0.0.1:8000/docs`.
+...or via the Swagger UI at `http://127.0.0.1:8000/docs`
 
 ## Tests
 
@@ -31,15 +33,13 @@ The analysis is deterministic, so it's guarded by a [characterization test](#glo
 A failing test will flag any changes in output:
 
 ```bash
-source .venv/bin/activate
-pip install -r requirements-dev.txt
-pytest
+make test
 ```
 
 If the change is intended/desired, you can [bless](#glossary) the updated snapshot and commit it:
 
 ```bash
-UPDATE_SNAPSHOT=1 pytest
+make bless
 ```
 
 ## Glossary

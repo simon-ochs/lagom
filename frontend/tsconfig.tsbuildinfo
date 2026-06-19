@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/types.ts","./src/components/dailysummary.tsx","./src/components/mealhabitstable.tsx","./src/components/ratiocards.tsx","./src/components/summarychips.tsx","./src/components/timeofdaytable.tsx","./src/components/uploadform.tsx"],"version":"5.9.3"}
