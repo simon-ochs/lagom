@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "cgm_readings": 3880,
+    "bolus_events": 82,
+    "pod_failures": 3,
+    "clean_windows": 46,
+    "rejected_windows": 36
+  },
+  "isf": {
+    "configured": 30.0,
+    "implied_median": 30.592105263157897,
+    "evaluated": 25,
+    "trended_high": 23,
+    "recommendation": "well-calibrated",
+    "suggested": null
+  },
+  "icr": {
+    "configured": 10.0,
+    "implied_median": 8.275862068965518,
+    "evaluated": 21,
+    "trended_high": 17,
+    "recommendation": "consider lowering",
+    "suggested": 8.5
+  },
+  "meal_habits": {
+    "Breakfast": {
+      "events": 1,
+      "avg_carbs": 40.0,
+      "avg_bolus": 5.55,
+      "median_hour": 8.266666666666667
+    },
+    "Dinner": {
+      "events": 11,
+      "avg_carbs": 33.63636363636363,
+      "avg_bolus": 3.6318181818181823,
+      "median_hour": 20.466666666666665
+    },
+    "Lunch": {
+      "events": 17,
+      "avg_carbs": 44.35294117647059,
+      "avg_bolus": 4.314705882352941,
+      "median_hour": 12.816666666666666
+    },
+    "Night": {
+      "events": 5,
+      "avg_carbs": 31.0,
+      "avg_bolus": 3.21,
+      "median_hour": 22.516666666666666
+    }
+  },
+  "time_of_day_breakdown": {
+    "Breakfast": {
+      "high": 8,
+      "ok": 2,
+      "low": 0
+    },
+    "Dinner": {
+      "high": 6,
+      "ok": 3,
+      "low": 0
+    },
+    "Lunch": {
+      "high": 16,
+      "ok": 1,
+      "low": 1
+    },
+    "Night": {
+      "high": 5,
+      "ok": 4,
+      "low": 0
+    }
+  },
+  "daily_summary": [
+    {
+      "date": "2026-06-05",
+      "total_basal": 30.15,
+      "total_bolus": 13.7,
+      "total_insulin": 43.85,
+      "basal_pct": 68.75712656784492,
+      "bolus_pct": 31.242873432155072,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-06",
+      "total_basal": 22.05,
+      "total_bolus": 13.3,
+      "total_insulin": 35.35,
+      "basal_pct": 62.37623762376238,
+      "bolus_pct": 37.62376237623762,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-07",
+      "total_basal": 14.8,
+      "total_bolus": 26.25,
+      "total_insulin": 41.05,
+      "basal_pct": 36.05359317904994,
+      "bolus_pct": 63.94640682095007,
+      "pod_failure": true
+    },
+    {
+      "date": "2026-06-08",
+      "total_basal": 26.75,
+      "total_bolus": 24.9,
+      "total_insulin": 51.65,
+      "basal_pct": 51.79090029041626,
+      "bolus_pct": 48.20909970958374,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-09",
+      "total_basal": 19.2,
+      "total_bolus": 18.15,
+      "total_insulin": 37.35,
+      "basal_pct": 51.40562248995983,
+      "bolus_pct": 48.594377510040154,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-10",
+      "total_basal": 24.9,
+      "total_bolus": 20.7,
+      "total_insulin": 45.6,
+      "basal_pct": 54.60526315789473,
+      "bolus_pct": 45.39473684210526,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-11",
+      "total_basal": 26.7,
+      "total_bolus": 21.35,
+      "total_insulin": 48.05,
+      "basal_pct": 55.56711758584808,
+      "bolus_pct": 44.43288241415193,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-12",
+      "total_basal": 31.4,
+      "total_bolus": 9.3,
+      "total_insulin": 40.7,
+      "basal_pct": 77.14987714987714,
+      "bolus_pct": 22.85012285012285,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-13",
+      "total_basal": 22.8,
+      "total_bolus": 5.0,
+      "total_insulin": 27.8,
+      "basal_pct": 82.01438848920863,
+      "bolus_pct": 17.985611510791365,
+      "pod_failure": true
+    },
+    {
+      "date": "2026-06-14",
+      "total_basal": 23.9,
+      "total_bolus": 23.4,
+      "total_insulin": 47.3,
+      "basal_pct": 50.52854122621564,
+      "bolus_pct": 49.471458773784356,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-15",
+      "total_basal": 21.3,
+      "total_bolus": 26.0,
+      "total_insulin": 47.3,
+      "basal_pct": 45.031712473572945,
+      "bolus_pct": 54.96828752642706,
+      "pod_failure": true
+    },
+    {
+      "date": "2026-06-16",
+      "total_basal": 23.4,
+      "total_bolus": 7.4,
+      "total_insulin": 30.8,
+      "basal_pct": 75.97402597402598,
+      "bolus_pct": 24.025974025974026,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-17",
+      "total_basal": 18.2,
+      "total_bolus": 18.15,
+      "total_insulin": 36.35,
+      "basal_pct": 50.06877579092159,
+      "bolus_pct": 49.9312242090784,
+      "pod_failure": false
+    },
+    {
+      "date": "2026-06-18",
+      "total_basal": 16.45,
+      "total_bolus": 12.35,
+      "total_insulin": 28.8,
+      "basal_pct": 57.11805555555555,
+      "bolus_pct": 42.88194444444444,
+      "pod_failure": false
+    }
+  ]
+}
