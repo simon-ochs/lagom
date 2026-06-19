@@ -31,4 +31,4 @@ Expects a Glooko export zip in the `data/` directory.
 
 ## TODO
 
-- Hypo windows are rejected rather than graded "too strong" because rescue carbs confound end glucose the same way a new meal does. Consider capturing them as directionally-too-strong and excluding only from the back-calculation.
+- [ ] Hypo windows are rejected rather than graded "too strong" because rescue carbs confound end glucose the same way a new meal does. Consider capturing them as directionally-too-strong and excluding only from the back-calculation.
