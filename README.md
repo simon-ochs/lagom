@@ -12,6 +12,7 @@ Omnipod's SmartAdjust algorithm adapts basal rates automatically, but meal and c
 ## Run
 
 ```bash
+python3 -m venv .venv
 source .venv/bin/activate
 jupyter lab
 ```
